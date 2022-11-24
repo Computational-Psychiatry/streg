@@ -1,4 +1,11 @@
-# streg
+# streg 
+
+Code to spatio-temporally register facial videos and remove jitter.
+
+**Before registration**         . . . . . . . .        **After registration**
+
+![Before registration](build/exampleoutput/before_eye.gif "Before" ) ![After registration](build/exampleoutput/after_eye.gif "After")
+
 
 
 # Compiling the code
