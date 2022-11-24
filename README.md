@@ -18,9 +18,7 @@ Run the following commands to compile the code (OpenCV is required)
 
 # Running the code
 
-Once you compile the code, you can go in the `build` directory and run the code as below
-
-The code runs as below with a total of four parameters; the last two are optional.
+Once you compile the code, you can go in the `build` directory and run the `streg` executable as below; the executable takes 4 parameters, 2 of which are optional:
 
 `./streg <input_video_file> <part_type> <*optional:* length_of_chunks> <*optional:* save_before_registration>`
 - **parameter 1** *input_video_file*: this is a video file that contains only a facial part (left eye, right eye or mouth).
