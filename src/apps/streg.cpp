@@ -91,13 +91,13 @@ void registerVideo(const std::string& videoPath, const std::string& patchType, c
     // initialize landmark detector
     vector<string> arguments(1, "null");
 
-    int FPS = -1;
+    double FPS;
     {
         cv::VideoCapture cap(videoPath);
         FPS = cap.get(cv::CAP_PROP_FPS);
     }
 
-    int Twidth = timeWindow*FPS;
+    int Twidth = std::round(timeWindow*FPS);
 
     //! we'll use this rect to crop the face. It will be the same rect throughout the sequence.
     //! Obviously the head can move throughout the sequence, but we'll make it large enough to ensure that
