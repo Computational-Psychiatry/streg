@@ -18,7 +18,10 @@ Run the following commands to compile the code (OpenCV is required)
 
 # Running the code
 
+Once you compile the code, you can go in the `build` directory and run the code as below
+
 The code runs as below with a total of four parameters; the last two are optional.
+
 `./streg <input_video_file> <part_type> <*optional:* length_of_chunks> <*optional:* save_before_registration>`
 - **parameter 1** *input_video_file*: this is a video file that contains only a facial part (left eye, right eye or mouth).
 - **parameter 2** *part_type*: This parameter determines which facial part will be registered; it must be set to either `leye`, or `reye` or `mouth`.
@@ -28,15 +31,15 @@ The code runs as below with a total of four parameters; the last two are optiona
 
 ## Example commands
 
-- `./streg vid01_leye.avi leye ./output `
-- `./streg vid01_reye.avi reye ./output `
-- `./streg vid01_mouth.avi mouth ./output `
+- `./streg exampledata/vid01_leye.avi leye ./output `
+- `./streg exampledata/vid01_reye.avi reye ./output `
+- `./streg exampledata/vid01_mouth.avi mouth ./output `
 
 If you want to store the "before registration" videos, you can run the following code
 
-- `./streg vid01_leye.avi leye ./output 3 1`
-- `./streg vid01_reye.avi reye ./output 3 1`
-- `./streg vid01_mouth.avi mouth ./output 3 1`
+- `./streg exampledata/vid01_leye.avi leye ./output 3 1`
+- `./streg exampledata/vid01_reye.avi reye ./output 3 1`
+- `./streg exampledata/vid01_mouth.avi mouth ./output 3 1`
 
 
 # Outputs
