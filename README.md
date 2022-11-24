@@ -13,7 +13,7 @@ Code to spatio-temporally register facial videos and remove jitter.
 Run the following commands to compile the code (OpenCV is required)
 1. `cd build`
 1. `./builder.sh`
-1. If compiling is successful, you an executable file named `streg` should be created
+1. If compiling is successful, an executable file named `streg` should be created
 
 
 # Running the code
